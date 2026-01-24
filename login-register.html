@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/bootstrab.css">
+    <link rel="stylesheet" href="./assets/css/globale.css">
+    <link rel="stylesheet" href="./assets/css/login-register.css">
+</head>
+<body>
+    <!-- HEADER START -->
+    <header>
+        <!-- NAV START -->
+        <nav>
+            <img src="./assets/img/LOGO.png" alt="logo" >
+            <ul>
+                <li>
+                    <a href="./index.html" class="active" aria-current="page">Home</a>
+                </li>
+                <li>
+                    <a href="./courses.html">Courses</a>
+                </li>
+                <li>
+                    <a href="./blog.html">Blog</a>
+                </li>
+                <!-- DROPDOWN START -->
+                <li class="dropdown">
+                    <a class=" dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">
+                        Page
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
+                        <hr class="dropdown-divider">
+                        <li><a class="dropdown-item" href="./faq.html">FAQs</a></li>
+                    </ul>
+                </li>
+                <!-- DROPDOWN END -->
+                <li>
+                    <a href="#">Premium Theme</a>
+                </li>
+            </ul>
+            <div class="login-register-search">
+                <button class="login"><a href="./login-register.html">Login / Register </a> </button>
+                <button class="search-btn" disabled>
+                    <i class="fas fa-search icon"></i>
+                </button>
+            </div>
+            <!-- MENU START -->
+            <button class="navbar-toggler menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <img src="./assets/img/logo-sm.png" alt="small logo">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+            <div class="offcanvas-body p-0">
+                <ul class="navbar-nav d-flex align-items-start p-0">
+                <li class="nav-item border-bottom border-3 border-light-subtle w-100">
+                    <a class="nav-link active fs-6 fw-semibold px-3 w-100 pt-4" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item border-bottom border-3 border-light-subtle w-100">
+                    <a class="nav-link fs-6 fw-semibold px-3 w-100 pt-4" href="./courses.html">Courses</a>
+                </li>
+                <li class="nav-item border-bottom border-3 border-light-subtle w-100">
+                    <a class="nav-link fs-6 fw-semibold px-3 w-100 pt-4" href="./blog.html">Plog</a>
+                </li>
+                <li class=" nav-item border-bottom border-3 border-light-subtle w-100">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button fs-6 fw-semibold px-3 py-4 text-left" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Page
+                            </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body d-flex justify-content-start flex-column">
+                                <a href="./contact.html" class="fs-6 fw-semibold">Contact</a>
+                                <a href="./faq.html" class="fs-6 fw-semibold">FAQs</a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item border-bottom border-3 border-light-subtle w-100">
+                    <a class="nav-link fs-6 fw-semibold px-3 w-100 pt-4" href="#">Premium Theme</a>
+                </li>
+                </ul>
+                <div class="search-login p-3">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <span class="input-group-text pe-0" id="basic-addon2">
+                                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <button class="main-btn primary-btn">
+                        <a href="./login-register.html">Login</a>
+                    </button>
+                </div>
+            </div>
+            <!-- MENU END -->
+        </nav>
+        <!-- NAV END -->
+
+        <!-- PAGE LINKS START -->
+        <div class="page-links" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Homepage</a></li>
+                <li class="breadcrumb-item">Login / Register</li>
+            </ol>
+        </div>
+        <!-- PAGE LINKS END -->
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN START -->
+    <main>
+        <!-- LOGIN-REGISTER SECTION START -->
+        <section class="login-register gap-4">
+                <form action="" method="get" class="login h-auto d-flex flex-column align-items-start gap-3 needs-validation" >
+                    <h1>
+                        Login
+                    </h1>
+                        <input type="email" id="login-email" placeholder="Email or username*" required>
+                        <input type="password" id="login-Password" placeholder="Password*" required >
+                        <div class="remember-me d-flex gap-1">
+                            <input type="checkbox" id="login-checkbox">
+                            <label for="login-checkbox" class="flex-shrink-0">Remember me</label>
+                        </div>
+                    <button type="submit" class="main-btn primary-btn w-100">Login</button>
+                    <a href="#">Lost your password?</a>
+                </form>
+                <form action="" method="get" class="register d-flex flex-column gap-3">
+                    <h1>
+                        Register
+                    </h1>
+                        <input type="email" id="register-email" placeholder="Email or username*" required>
+                        <input type="text" id="register-username" placeholder="Username*" required>
+                        <input type="password" id="register-Password" placeholder="Password*" required >
+                        <input type="password" id="register-confirm-Password" placeholder="Confirm Password*" required>
+                    <button type="submit" class="main-btn primary-btn w-100">Register</button>
+                </form>
+        </section>
+        <!-- LOGIN-REGISTER SECTION END -->
+    </main>
+    <!-- MAIN END -->
+
+    <!-- FOOTER START -->
+    <footer>
+        <div class="head">
+            <div class="web-info">
+                <img src="./assets/img/LOGO.png" alt="logo">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+            <div class="get-help">
+                <h1>
+                    GET HELP
+                </h1>
+                <ul>
+                    <li>
+                        <a href="./contact.html">
+                        Contact Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        Latest Articles
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./faq.html">
+                        FAQ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="programs">
+                <h1>
+                    PROGRAMS
+                </h1>
+                <ul>
+                    <li>
+                        <a href="#">
+                            Art & Design
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Business
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            IT & Software
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Languages
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Programming
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-us">
+                <h1>
+                    CONTACT US
+                </h1>
+                <p class="p-address">
+                    Address: 2321 New Design Str, Lorem Ipsum10 Hudson Yards, USA
+                </p>
+                <p class="p-tel">
+                    Tel: + (123) 2500-567-8988
+                </p>
+                <p class="p-mail">
+                    Mail: supportlms@gmail.com
+                </p>
+                <div class="social">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+            Copyright © 2024 LearnPress LMS | Powered by ThimPress
+            </p>
+        </div>
+        
+    </footer>
+    <!-- FOOTER END -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js" integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/bootstrab.js"></script>
+</body>
+</html>

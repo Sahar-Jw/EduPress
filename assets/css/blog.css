@@ -1,0 +1,118 @@
+/* MAIN START */
+main{
+    /* BLOG SECTION START */
+    .blog{
+                padding: 56px 70px 0px;
+            .head{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 50px;
+                    h1{
+                        font-family: 'Exo';
+                        font-weight: 600;
+                        font-size: 36px;
+                    }
+                    .search-view{
+                        display: flex;
+                        align-items: baseline;
+                        gap: 20px;
+                            .input-group{
+                                .form-control{
+                                    &:focus{
+                                        box-shadow: none;
+                                    }
+                                    border: none;
+                                    border-bottom: 1px solid #000;
+                                    border-radius: 0px;
+                                }
+                                .input-group-append{
+                                    .input-group-text{
+                                        height: 100%;
+                                        background: none;
+                                        border: none;
+                                        border-bottom: 1px solid #000;
+                                        border-radius: 0px;
+                                    }
+                                }
+                        }
+                        .icon{
+                            cursor: pointer;
+                        }
+                    }
+            }
+                .content{
+                    .card{
+                        &:hover{
+                            background-color: var(--sec-bg-color);
+                            box-shadow: 0px 4px 20px 0px #0000001A;
+                            transition: all 0.4s linear;
+                            h1{
+                                color: var(--primary-color);
+                                transition: all 0.4s linear;
+                            }
+                        }
+                        border-radius: 20px;
+                        border: 1px solid var(--border-color) !important;
+                        h1{
+                            font-family: 'Exo';
+                            font-weight: 600;
+                            font-size: 20px;
+                        }
+                        .p-date{
+                            font-family: 'Jost';
+                            font-size: 16px;
+                            color: var(--sec--color);
+                                .calender{
+                                    display: none;
+                                    color: var(--primary-color);
+                                }
+                        }
+                        p{
+                            font-family: 'Jost';
+                            font-size: 18px;
+                            color: var(--sec--color);
+                        }
+                    }
+            }
+            .page-link:focus{
+                box-shadow: none;
+            }
+    }
+    /* BLOG SECTION END */
+}
+/* MAIN END */
+
+/* MEDIA GUERY START */
+@media screen and (max-width:992px) {
+    /* BLOG SECTION START */
+    .blog{
+            padding: 56px 20px !important;
+            .head{
+                flex-direction: column;
+                gap: 32px;
+                align-items: flex-start !important;
+                .search-view{
+                    width: 100%;
+                }
+            }
+            .content{
+                .card{
+                    margin-bottom: 35px !important;
+                    img{
+                            border-radius: 20px 20px 0px 0px !important;
+                            width: 100% !important;
+                            height: 100% !important;
+                            fill-opacity: cover;
+                    }
+                    .p-date{
+                        .calender{
+                            display: inline !important;
+                        }
+                        }
+                }
+            }
+        }
+    /* BLOG SECTION END */
+}
+/* MEDIA GUERY END */

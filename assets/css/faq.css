@@ -1,0 +1,75 @@
+/* MAIN START */
+main{
+    /* FAQS SECTION START */
+    .faqs{
+        padding:56px 70px 0px ;
+            h1{
+                margin-bottom: 50px;
+            }
+            .column-one,.column-tow{
+                .accordion-item{
+                    border: none !important;
+                    .accordion-button{
+                        &:not(.collapsed){
+                            color: var(--primary-color);
+                            box-shadow: none;
+                            border-end-end-radius:0px !important ;
+                            border-bottom-left-radius:0px !important ;
+                        }
+                    &:focus{
+                    box-shadow:none !important;
+                    }
+                    &::after{
+                        content: "\f078" !important;
+                        border: none !important;
+                        font: normal normal normal 14px / 1 FontAwesome;
+                        font-size: 10px;
+                        background-image: none;
+                        font-size: 20px;
+                        color: var(--third-text-color);
+                        }
+                        font-family: 'Exo';
+                        font-weight: 600;
+                        font-size: 16px;
+                        background-color: var(--sec-bg-color);
+                    }
+                    .accordion-body{
+                        background-color: var(--sec-bg-color);
+                        color: var(--sec-text);
+                        font-family: 'Jost';
+                        font-size: 18px;
+                    }
+                }
+            }
+            img{
+                margin-top: 50px;
+            }
+        }
+    /* FAQS SECTION END */
+}
+/* MAIN END */
+
+/* MEDIA GUERY START */
+@media screen and (max-width:992px) {
+    /* MAIN START */
+    main{
+        /* FAQS SECTION START */
+        .faqs{
+        padding:56px 20px 0px!important;
+            .content{
+                .accordion{
+                    flex-wrap: wrap;
+                    .column-one,.column-tow{
+                        width: 100% !important;
+                    }
+                }
+            }
+            img{
+                width: 100%;
+            }
+        }
+        /* FAQS SECTION END */
+    /* MAIN END */
+    }
+}
+/* MEDIA GUERY END */
